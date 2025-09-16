@@ -2,7 +2,7 @@
 sequenceDiagram
     actor User
     participant LibrarySystem
-    database LibraryDB
+    participant LibraryDB
 
     User ->> LibrarySystem: Request to Borrow Book (BookID, UserID)
     LibrarySystem ->> LibraryDB: Validate User (membership, fines, limits)
